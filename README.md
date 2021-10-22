@@ -4,7 +4,13 @@ Your task is to finish the Redux `mapStateToProps` function to a program to help
 
 ## Getting started
 
-Install modules by running `npm install` in the command line, then `npm run start`.
+1. First make sure you have the NPM package, Yarn, installed by running `npm install -g yarn`
+
+2. Then install the local node modules by running `yarn install` in the command line.
+
+3. Startup the project with `yarn run start`.
+
+4. Read through the challenge scenario below and implement your solution.
 
 ## Inputs & Outputs
 

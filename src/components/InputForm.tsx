@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
-import React, {ChangeEvent, FC, FormEvent, useEffect, useState} from 'react';
+import {ChangeEvent, FC, FormEvent, useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 
 import {setAccountsActionCreator, setJournalEntriesActionCreator, setUserInputActionCreator} from 'actions';
@@ -46,24 +46,24 @@ const InputForm: FC<{dispatch: any}> = ({dispatch}) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label htmlFor="journal">Journal</label>
+      <div className="mb-3">
+        <label className="form-label" htmlFor="journal">Journal</label>
         <textarea className="form-control" id="journal" rows={3} onChange={handleChange} value={journal} />
       </div>
 
-      <div className="form-group">
-        <label htmlFor="accounts">Accounts</label>
+      <div className="mb-3">
+        <label className="form-label" htmlFor="accounts">Accounts</label>
         <textarea className="form-control" id="accounts" rows={3} onChange={handleChange} value={accounts} />
       </div>
 
-      <div className="form-group">
-        <label htmlFor="userInput">User input</label>
+      <div className="mb-3">
+        <label className="form-label" htmlFor="userInput">User input</label>
         <input type="text" className="form-control" id="userInput" value={userInput} onChange={handleChange} />
       </div>
 
-      <button type="submit" className="btn btn-primary">
-        Submit
-      </button>
+      <div className="mb-3">
+        <input className="btn btn-primary" type="submit" value="Submit" />
+      </div>
     </form>
   );
 };

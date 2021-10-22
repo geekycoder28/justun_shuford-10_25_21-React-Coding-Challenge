@@ -8,7 +8,7 @@ export const stringToDate = (str: string): Date => {
 };
 
 export const dateToString = (date: Date): string => {
-  if (isNaN(date.valueOf())) {
+  if (Number.isNaN(date.valueOf())) {
     return '*';
   }
 
